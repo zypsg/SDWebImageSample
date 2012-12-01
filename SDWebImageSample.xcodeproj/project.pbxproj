@@ -22,7 +22,7 @@
 		B02615E41669D13800C0926F /* peaceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02615E21669D13800C0926F /* peaceDetailViewController.xib */; };
 		B04A45301669DC7700841778 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B04A45291669DC4E00841778 /* libSDWebImage.a */; };
 		B04A45321669DD1400841778 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04A45311669DD1400841778 /* ImageIO.framework */; };
-		B04A45391669E34300841778 /* placehoder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04A45381669E34300841778 /* placehoder@2x.png */; };
+		B04A45401669F25700841778 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04A453F1669F25700841778 /* placeholder@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,7 @@
 		B02615E31669D13800C0926F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/peaceDetailViewController.xib; sourceTree = "<group>"; };
 		B04A451E1669DC4E00841778 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = ../../SDWebImage/SDWebImage.xcodeproj; sourceTree = "<group>"; };
 		B04A45311669DD1400841778 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		B04A45381669E34300841778 /* placehoder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placehoder@2x.png"; sourceTree = "<group>"; };
+		B04A453F1669F25700841778 /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +129,7 @@
 		B02615C71669D13800C0926F /* SDWebImageSample */ = {
 			isa = PBXGroup;
 			children = (
-				B04A45381669E34300841778 /* placehoder@2x.png */,
+				B04A453F1669F25700841778 /* placeholder@2x.png */,
 				B02615D01669D13800C0926F /* peaceAppDelegate.h */,
 				B02615D11669D13800C0926F /* peaceAppDelegate.m */,
 				B02615D91669D13800C0926F /* peaceMasterViewController.h */,
@@ -256,7 +256,7 @@
 				B02615D81669D13800C0926F /* Default-568h@2x.png in Resources */,
 				B02615E11669D13800C0926F /* peaceMasterViewController.xib in Resources */,
 				B02615E41669D13800C0926F /* peaceDetailViewController.xib in Resources */,
-				B04A45391669E34300841778 /* placehoder@2x.png in Resources */,
+				B04A45401669F25700841778 /* placeholder@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

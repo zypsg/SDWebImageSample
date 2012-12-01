@@ -388,8 +388,9 @@
     }
     
     cell.textLabel.text = [NSString stringWithFormat:@"Image #%d", indexPath.row];
+    UIImage* img = [UIImage imageNamed:@"placeholder.png"];
     [cell.imageView setImageWithURL:[NSURL URLWithString:[_objects objectAtIndex:indexPath.row]]
-                   placeholderImage:[UIImage imageNamed:@"placehoder.png"]];
+                   placeholderImage:img];
     return cell;
 }
 
