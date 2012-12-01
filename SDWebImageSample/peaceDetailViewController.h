@@ -10,8 +10,8 @@
 
 @interface peaceDetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) NSURL *imageURL;
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

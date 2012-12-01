@@ -7,39 +7,34 @@
 //
 
 #import "peaceDetailViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface peaceDetailViewController ()
 - (void)configureView;
 @end
 
 @implementation peaceDetailViewController
+@synthesize imageURL = _imageURL;
+@synthesize imageView = _imageView;
 
-- (void)dealloc
-{
-    [_detailItem release];
-    [_detailDescriptionLabel release];
-    [super dealloc];
-}
+ 
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setImageURL:(NSURL *)imageURL
 {
-    if (_detailItem != newDetailItem) {
-        [_detailItem release];
-        _detailItem = [newDetailItem retain];
-
-        // Update the view.
+    if (_imageURL != imageURL)
+    {
+        _imageURL = imageURL;
         [self configureView];
     }
 }
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+    if (self.imageURL)
+    {
+        [self.imageView setImageWithURL:self.imageURL placeholderImage:nil options:SDWebImageProgressiveDownload];
     }
 }
 
@@ -48,6 +43,16 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+}
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    self.imageView = nil;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
 - (void)didReceiveMemoryWarning
